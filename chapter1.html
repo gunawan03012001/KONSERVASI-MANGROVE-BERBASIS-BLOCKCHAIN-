@@ -1,0 +1,443 @@
+<!-- chapter1.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAB 1: Pengenalan Mangrove | Mangrove Blockchain Indonesia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>PENGENALAN EKOSISTEM MANGROVE</h1>
+                <div class="datetime" id="datetime"></div>
+            </div>
+            <button class="logout-btn" onclick="logout()">LOGOUT</button>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="sidebar-left">
+                <div class="toc-container">
+                    <h3>DAFTAR ISI</h3>
+                    <ul class="toc-list">
+                        <li><a href="home.html">BERANDA</a></li>
+                        <li class="has-submenu active">
+                            <a href="chapter1.html">BAB 1: PENGENALAN MANGROVE</a>
+                            <span class="toggle-submenu">+</span>
+                            <ul class="submenu" style="display: block;">
+                                <li><a href="#section1-1" class="active">1.1 Pengertian Mangrove</a></li>
+                                <li><a href="#section1-2">1.2 Jenis-Jenis Mangrove</a></li>
+                                <li><a href="#section1-3">1.3 Level Habitat Mangrove</a></li>
+                                <li><a href="#section1-4">1.4 Hutan Mangrove di Indonesia</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="chapter2.html">BAB 2: PERMASALAHAN MANGROVE</a>
+                            <span class="toggle-submenu">+</span>
+                            <ul class="submenu">
+                                <li><a href="chapter2.html#section2-1">2.1 Permasalahan Mangrove</a></li>
+                                <li><a href="chapter2.html#section2-2">2.2 Blockchain untuk Kredit Karbon</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="chapter3.html">BAB 3: VARIABEL DAN TABEL</a>
+                            <span class="toggle-submenu">+</span>
+                            <ul class="submenu">
+                                <li><a href="chapter3.html#section3-1">3.1 Tabel Konservasi</a></li>
+                                <li><a href="chapter3.html#section3-2">3.2 Tabel Transaksi Blockchain</a></li>
+                                <li><a href="chapter3.html#section3-3">3.3 Tabel Validator</a></li>
+                                <li><a href="chapter3.html#section3-4">3.4 Tabel Anggota Komunitas</a></li>
+                                <li><a href="chapter3.html#section3-5">3.5 Tabel Harga Pasar Karbon</a></li>
+                                <li><a href="chapter3.html#section3-6">3.6 Tabel Aktivitas Konservasi</a></li>
+                                <li><a href="chapter3.html#section3-7">3.7 Tabel Sumber Pendanaan</a></li>
+                                <li><a href="chapter3.html#section3-8">3.8 Tabel Mitra Lokal</a></li>
+                                <li><a href="chapter3.html#section3-9">3.9 Tabel Dampak Lingkungan</a></li>
+                                <li><a href="chapter3.html#section3-10">3.10 Tabel Kepemilikan Lahan</a></li>
+                                <li><a href="chapter3.html#section3-11">3.11 Tabel Izin Regulasi</a></li>
+                                <li><a href="chapter3.html#section3-12">3.12 Tabel Keterlibatan Komunitas</a></li>
+                                <li><a href="chapter3.html#section3-13">3.13 Tabel Kepatuhan Data</a></li>
+                                <li><a href="chapter3.html#section3-14">3.14 Tabel Pemantauan Biodiversitas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <div class="content-section" id="section1-1">
+                    <h2>1.1 Pengertian Mangrove</h2>
+                    <p>Mangrove adalah ekosistem hutan pesisir yang tumbuh di zona intertidal, seperti muara sungai, laguna, atau pantai, dengan vegetasi yang beradaptasi terhadap salinitas tinggi (10–35 ppt), tanah berlumpur anaerobik, dan genangan air laut periodik.</p>
+                    
+                    <h3>Adaptasi Mangrove:</h3>
+                    <ul>
+                        <li><strong>Akar Tunjang (Rhizophora spp.)</strong>: Untuk menahan erosi dan stabilisasi sedimen</li>
+                        <li><strong>Akar Napas (Avicennia spp.)</strong>: Pneumatophores untuk mengatasi kekurangan oksigen di tanah anaerobik</li>
+                        <li><strong>Vivipari</strong>: Metode reproduksi unik dimana benih berkecambah saat masih menempel pada pohon induk</li>
+                    </ul>
+                    
+                    <h3>Fungsi Ekologi Mangrove:</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Fungsi</th>
+                                    <th>Penjelasan</th>
+                                    <th>Data Pendukung</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Proteksi Pesisir</td>
+                                    <td>Akar mangrove mengurangi abrasi pantai akibat gelombang dan badai, melindungi infrastruktur pesisir</td>
+                                    <td>Mengurangi tinggi gelombang hingga 66% (Adame et al., 2022)</td>
+                                </tr>
+                                <tr>
+                                    <td>Sekuestrasi Karbon</td>
+                                    <td>Menyimpan CO₂ dalam biomassa dan sedimen dengan kapasitas hingga 1.000 ton karbon per hektare</td>
+                                    <td>Environmental_Impact.csv (I001, CO2_Sequestration_Tonnes = 500)</td>
+                                </tr>
+                                <tr>
+                                    <td>Keanekaragaman Hayati</td>
+                                    <td>Menyediakan habitat bagi spesies ikan, krustasea, burung, dan reptil</td>
+                                    <td>Biodiversity_Monitoring.csv (B101, Species_Count = 15)</td>
+                                </tr>
+                                <tr>
+                                    <td>Sumber Daya Ekonomi</td>
+                                    <td>Mendukung mata pencaharian melalui perikanan, ekowisata, dan kayu berkelanjutan</td>
+                                    <td>Proyek ekowisata di Banten menghasilkan 500 juta IDR/tahun</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Best Practice: Rehabilitasi Teluk Bintuni, Papua</h3>
+                    <p>Proyek rehabilitasi mangrove di Teluk Bintuni, Papua, yang dikelola oleh KLHK bersama masyarakat lokal:</p>
+                    <ul>
+                        <li>Memulihkan 10.000 hektare mangrove sejak 2020</li>
+                        <li>Menggunakan teknologi GIS untuk pemetaan zonasi</li>
+                        <li>Mengintegrasikan blockchain untuk transparansi kredit karbon</li>
+                        <li>Menghasilkan 5.000 kredit karbon pada 2024</li>
+                        <li>Keterlibatan masyarakat lokal meningkatkan survival rate hingga 85%</li>
+                    </ul>
+                    
+                    <h3>KPI Measurement:</h3>
+                    <div class="kpi-container">
+                        <div class="kpi-item">
+                            <h4>Luas Area Rehabilitasi</h4>
+                            <p>Peningkatan luas mangrove minimal 10% per tahun</p>
+                            <p><strong>Contoh:</strong> Dari 10.000 ha menjadi 11.000 ha</p>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Karbon Terserap</h4>
+                            <p>Target 500–1.000 ton CO₂/ha/tahun</p>
+                            <p><strong>Metode:</strong> Loss on ignition (Environmental_Impact.csv, I001 = 500 ton)</p>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Keanekaragaman Spesies</h4>
+                            <p>Peningkatan species richness minimal 5 spesies/tahun</p>
+                            <p><strong>Data:</strong> Biodiversity_Monitoring.csv, B101, Species_Count = 15</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Formula Pengukuran Karbon:</h3>
+                    <p>Karbon terserap dihitung untuk mengestimasi kontribusi mangrove terhadap mitigasi perubahan iklim:</p>
+                    <p>\[C = A \cdot D \cdot F_c\]</p>
+                    <p>di mana:</p>
+                    <ul>
+                        <li>\(A\): Luas area mangrove (ha, dari Area_Ha di Mangrove_Conservation_Records.csv)</li>
+                        <li>\(D\): Kepadatan karbon (ton/ha, rata-rata 500–1.000 ton/ha)</li>
+                        <li>\(F_c\): Faktor konversi karbon ke CO₂ (3.67, berdasarkan rasio molekul CO₂/C = 44/12)</li>
+                    </ul>
+                    
+                    <h4>Contoh Perhitungan:</h4>
+                    <p>Untuk proyek C001 (Area_Ha = 50 ha, \(D = 500\) ton/ha):</p>
+                    <p>\[C = 50 \cdot 500 \cdot 3.67 = 91,750 \, \text{ton CO}_2\]</p>
+                </div>
+                
+                <div class="content-section" id="section1-2">
+                    <h2>1.2 Jenis-Jenis Mangrove</h2>
+                    <p>Indonesia memiliki sekitar 45 spesies mangrove sejati (true mangroves), mencakup 60% dari total spesies global. Berikut adalah spesies utama:</p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Spesies</th>
+                                    <th>Karakteristik</th>
+                                    <th>Zona Habitat</th>
+                                    <th>Peran Ekologis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rhizophora spp. (R. apiculata, R. mucronata)</td>
+                                    <td>Akar tunjang untuk menahan sedimen dan erosi</td>
+                                    <td>Zona intermediet (salinitas 10–30 ppt)</td>
+                                    <td>Restorasi cepat, stabilisasi pantai</td>
+                                </tr>
+                                <tr>
+                                    <td>Avicennia spp. (A. marina)</td>
+                                    <td>Akar napas (pneumatophores) untuk mengambil oksigen</td>
+                                    <td>Zona proksimal (salinitas >30 ppt)</td>
+                                    <td>Tahan salinitas tinggi, habitat burung</td>
+                                </tr>
+                                <tr>
+                                    <td>Sonneratia spp. (S. alba)</td>
+                                    <td>Tumbuh di zona dengan paparan air laut konstan</td>
+                                    <td>Zona proksimal</td>
+                                    <td>Menahan gelombang, nursery ground ikan</td>
+                                </tr>
+                                <tr>
+                                    <td>Bruguiera spp. (B. gymnorrhiza)</td>
+                                    <td>Akar lutut untuk stabilitas di tanah berlumpur</td>
+                                    <td>Zona intermediet hingga distal</td>
+                                    <td>Stabilisasi substrat, sumber kayu</td>
+                                </tr>
+                                <tr>
+                                    <td>Ceriops spp. dan Xylocarpus spp.</td>
+                                    <td>Tumbuh di zona dengan salinitas rendah</td>
+                                    <td>Zona distal (salinitas <10 ppt)</td>
+                                    <td>Dukungan keanekaragaman ekosistem</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Best Practice: Restorasi Pasca-Tsunami Aceh</h3>
+                    <p>Proyek restorasi mangrove pasca-tsunami di Aceh menggunakan Rhizophora mucronata karena:</p>
+                    <ul>
+                        <li>Pertumbuhan cepat</li>
+                        <li>Kemampuan menahan erosi yang baik</li>
+                        <li>Melibatkan 1.000 petani lokal (Community_Members.csv, M001, Role = Farmer)</li>
+                        <li>Memulihkan 2.000 hektare</li>
+                        <li>Menghasilkan 2.000 ton CO₂ terserap pada 2023 (Environmental_Impact.csv, I004)</li>
+                    </ul>
+                    
+                    <h3>KPI Measurement:</h3>
+                    <div class="kpi-container">
+                        <div class="kpi-item">
+                            <h4>Tingkat Kelangsungan Hidup</h4>
+                            <p>Minimal 85% untuk Rhizophora spp. setelah 2 tahun penanaman</p>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Kepadatan Pohon</h4>
+                            <p>Target 150–250 pohon/ha</p>
+                            <p><strong>Data:</strong> Biodiversity_Monitoring.csv, B101 = 200 pohon/ha</p>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Peningkatan Spesies</h4>
+                            <p>Minimal 3 spesies mangrove tambahan per proyek dalam 5 tahun</p>
+                            <p><strong>Data:</strong> Species_Count dari Biodiversity_Monitoring.csv</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Rules of Thumb:</h3>
+                    <ul>
+                        <li>Pilih Avicennia marina untuk zona proksimal dengan salinitas >30 ppt</li>
+                        <li>Kombinasikan Rhizophora dan Avicennia untuk meningkatkan resiliensi ekosistem</li>
+                        <li>Lakukan pemantauan kepadatan pohon setiap 6 bulan menggunakan teknologi GIS</li>
+                        <li>Gunakan bibit dari sumber lokal untuk meningkatkan survival rate</li>
+                    </ul>
+                </div>
+                
+                <div class="content-section" id="section1-3">
+                    <h2>1.3 Level Habitat Mangrove</h2>
+                    <p>Ekosistem mangrove diklasifikasikan berdasarkan zona ekologis yang dipengaruhi oleh pasang surut, salinitas, dan jenis tanah:</p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Zona</th>
+                                    <th>Salinitas</th>
+                                    <th>Spesies Dominan</th>
+                                    <th>Karakteristik</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Zona Proksimal (Dekat Laut)</td>
+                                    <td>30–35 ppt</td>
+                                    <td>Avicennia marina, Sonneratia alba</td>
+                                    <td>Tahan genangan air laut konstan, paparan gelombang tinggi</td>
+                                </tr>
+                                <tr>
+                                    <td>Zona Intermediet</td>
+                                    <td>10–30 ppt</td>
+                                    <td>Rhizophora spp., Bruguiera spp.</td>
+                                    <td>Akar tunjang atau lutut untuk stabilitas, zona paling produktif</td>
+                                </tr>
+                                <tr>
+                                    <td>Zona Distal (Dekat Daratan)</td>
+                                    <td><10 ppt</td>
+                                    <td>Xylocarpus granatum, Nypa fruticans</td>
+                                    <td>Terpengaruh air tawar, salinitas rendah</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Best Practice: Pemetaan Zonasi di Riau</h3>
+                    <p>Proyek di Riau menggunakan pemetaan zonasi ekologis dengan teknologi GIS untuk:</p>
+                    <ul>
+                        <li>Menanam Avicennia marina di zona proksimal</li>
+                        <li>Menanam Rhizophora mucronata di zona intermediet</li>
+                        <li>Mencapai survival rate 90%</li>
+                        <li>Data kualitas air "Good" (Biodiversity_Monitoring.csv, B104)</li>
+                        <li>Kepadatan pohon 220 pohon/ha</li>
+                    </ul>
+                    
+                    <h3>Indeks Kualitas Habitat:</h3>
+                    <p>Indeks kualitas habitat dihitung untuk mengevaluasi kesehatan ekosistem mangrove:</p>
+                    <p>\[I_{h}=\frac{S_{c}+D_{t}+Q_{w}}{3}\]</p>
+                    <p>di mana:</p>
+                    <ul>
+                        <li>\(S_{c}\): Species_Count (dinormalisasi ke skala 0-100, maksimum 45 species)</li>
+                        <li>\(D_{t}\): Tree_Density (dinormalisasi ke skala 0-100, maksimum 250 pohon/ha)</li>
+                        <li>\(Q_{w}\): Water_Quality (Good = 100, Moderate = 50, Poor = 0)</li>
+                    </ul>
+                    
+                    <h4>Contoh Perhitungan:</h4>
+                    <p>Untuk B101 (Species_Count = 15, Tree_Density = 200, Water_Quality = Good):</p>
+                    <p>\[S_{c}=\frac{15}{45}\cdot 100=33.33\]</p>
+                    <p>\[D_{t}=\frac{200}{250}\cdot 100=80\]</p>
+                    <p>\[Q_{w}=100\]</p>
+                    <p>\[I_{h}=\frac{33.33+80+100}{3}=71.11\,(\text{skala 0-100})\]</p>
+                </div>
+                
+                <div class="content-section" id="section1-4">
+                    <h2>1.4 Hutan Mangrove di Indonesia</h2>
+                    <p>Indonesia memiliki luas hutan mangrove terbesar di dunia, sekitar 3,7 juta hektare, mencakup 23% dari total mangrove global. Distribusi utama:</p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Wilayah</th>
+                                    <th>Luas Mangrove (ha)</th>
+                                    <th>Lokasi Utama</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Papua</td>
+                                    <td>±3,7 juta</td>
+                                    <td>Teluk Bintuni, Merauke</td>
+                                </tr>
+                                <tr>
+                                    <td>Sumatra</td>
+                                    <td>±417.000</td>
+                                    <td>Aceh, Riau</td>
+                                </tr>
+                                <tr>
+                                    <td>Kalimantan</td>
+                                    <td>±165.000</td>
+                                    <td>Kalimantan Barat, Timur</td>
+                                </tr>
+                                <tr>
+                                    <td>Sulawesi</td>
+                                    <td>±53.000</td>
+                                    <td>Sulawesi Selatan</td>
+                                </tr>
+                                <tr>
+                                    <td>Jawa</td>
+                                    <td>±34.400</td>
+                                    <td>Banten, Jawa Timur</td>
+                                </tr>
+                                <tr>
+                                    <td>Bali dan Nusa Tenggara</td>
+                                    <td>±3.700</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Ancaman Utama:</h3>
+                    <ul>
+                        <li>Deforestasi (40% kerusakan sejak 1980)</li>
+                        <li>Konversi lahan (Land_Tenure_Records.csv, T103, Boundary_Defined = No)</li>
+                        <li>Polusi (Biodiversity_Monitoring.csv, B103, Water_Quality = Poor)</li>
+                    </ul>
+                    
+                    <h3>Program Rehabilitasi Nasional:</h3>
+                    <p>KLHK menargetkan pemulihan 600.000 hektare hingga 2030 (KLHK, 2024)</p>
+                    
+                    <h3>Best Practice: Ekowisata Mangrove Banten</h3>
+                    <p>Proyek ekowisata mangrove di Banten:</p>
+                    <ul>
+                        <li>Melibatkan masyarakat lokal</li>
+                        <li>Menghasilkan pendapatan 500 juta IDR/tahun (DLH Banten, 2024)</li>
+                        <li>Distribusi manfaat 5 juta IDR (Community_Engagement.csv, E101)</li>
+                    </ul>
+                    
+                    <h3>Indeks Konservasi:</h3>
+                    <p>Indeks konservasi mangrove dihitung untuk mengevaluasi keberhasilan proyek:</p>
+                    <p>\[I_{c} = \frac{A + P + B_{d}}{3}\]</p>
+                    <p>di mana:</p>
+                    <ul>
+                        <li>\(A\): Luas area (ha, dari Area_Ha)</li>
+                        <li>\(P\): Jumlah peserta (Participants dari Community_Engagement.csv)</li>
+                        <li>\(B_{d}\): Manfaat ekonomi (juta IDR, dari Benefit_Distributed)</li>
+                    </ul>
+                    
+                    <h4>Contoh Perhitungan:</h4>
+                    <p>Untuk E101 (A = 50 ha, P = 10, B_{d} = 5jutaIDR):</p>
+                    <p>\[I_{c} = \frac{50+10+5}{3} = 21.67\]</p>
+                </div>
+            </main>
+
+            <aside class="sidebar-right">
+                <div class="tips-container">
+                    <h3>TIPS & INFORMASI</h3>
+                    
+                    <div class="tip-card" id="tip1-1">
+                        <h4>Penanaman Optimal</h4>
+                        <p>Lakukan penanaman mangrove pada zona intertidal dengan salinitas 10–30 ppt untuk memastikan survival rate >80%.</p>
+                    </div>
+                    
+                    <div class="tip-card" id="tip1-2">
+                        <h4>Spesies Rekomendasi</h4>
+                        <p>Gunakan Rhizophora mucronata untuk zona intermediet karena pertumbuhannya cepat dan akar tunjangnya kuat.</p>
+                    </div>
+                    
+                    <div class="tip-card" id="tip1-3">
+                        <h4>Pelibatan Masyarakat</h4>
+                        <p>Libatkan masyarakat adat untuk proyek di Community Land (Land_Tenure_Records.csv, T102, Owner = Masyarakat Adat).</p>
+                    </div>
+                    
+                    <div class="tip-card" id="tip1-4">
+                        <h4>Pemantauan</h4>
+                        <p>Lakukan pemantauan berkala setiap 6 bulan menggunakan drone untuk memastikan kepadatan vegetasi (Biodiversity_Monitoring.csv, B101, Tree_Density = 200 pohon/ha).</p>
+                    </div>
+                    
+                    <div class="tip-card" id="tip1-5">
+                        <h4>Keamanan Data</h4>
+                        <p>Pastikan data konservasi dienkripsi dengan tingkat High untuk keamanan (Blockchain_Data_Compliance.csv D101, Encryption_level = High).</p>
+                    </div>
+                    
+                    <div class="tip-card" id="tip1-6">
+                        <h4>Regulasi Penting</h4>
+                        <ul>
+                            <li>Peraturan Menteri LHK No. P.33/2016: Rehabilitasi mangrove untuk mitigasi perubahan iklim</li>
+                            <li>UU No. 32/2009: Perlindungan dan Pengelolaan Lingkungan Hidup</li>
+                            <li>Perpres No. 98/2021: Penyelenggaraan Nilai Ekonomi Karbon</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <p>MANGROVE BLOCKCHAIN INDONESIA © 2025 ARRY HUTOMO. All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
