@@ -1,0 +1,447 @@
+<!-- chapter2.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAB 2: Permasalahan Mangrove | Mangrove Blockchain Indonesia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>PERMASALAHAN DAN SOLUSI MANGROVE</h1>
+                <div class="datetime" id="datetime"></div>
+            </div>
+            <button class="logout-btn" onclick="logout()">LOGOUT</button>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="sidebar-left">
+                <div class="toc-container">
+                    <h3>DAFTAR ISI</h3>
+                    <ul class="toc-list">
+                        <li><a href="home.html">BERANDA</a></li>
+                        <li class="has-submenu">
+                            <a href="chapter1.html">BAB 1: PENGENALAN MANGROVE</a>
+                            <span class="toggle-submenu">+</span>
+                            <ul class="submenu">
+                                <li><a href="chapter1.html#section1-1">1.1 Pengertian Mangrove</a></li>
+                                <li><a href="chapter1.html#section1-2">1.2 Jenis-Jenis Mangrove</a></li>
+                                <li><a href="chapter1.html#section1-3">1.3 Level Habitat Mangrove</a></li>
+                                <li><a href="chapter1.html#section1-4">1.4 Hutan Mangrove di Indonesia</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu active">
+                            <a href="chapter2.html">BAB 2: PERMASALAHAN MANGROVE</a>
+                            <span class="toggle-submenu">+</span>
+                            <ul class="submenu" style="display: block;">
+                                <li><a href="#section2-1" class="active">2.1 Permasalahan Mangrove</a></li>
+                                <li><a href="#section2-2">2.2 Blockchain untuk Kredit Karbon</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="chapter3.html">BAB 3: VARIABEL DAN TABEL</a>
+                            <span class="toggle-submenu">+</span>
+                            <ul class="submenu">
+                                <li><a href="chapter3.html#section3-1">3.1 Tabel Konservasi</a></li>
+                                <li><a href="chapter3.html#section3-14">3.14 Tabel Pemantauan Biodiversitas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <div class="content-section" id="section2-1">
+                    <h2>2.1 Permasalahan Mangrove di Indonesia</h2>
+                    <p>Hutan mangrove Indonesia menghadapi berbagai ancaman serius yang memerlukan penanganan segera:</p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Masalah</th>
+                                    <th>Dampak</th>
+                                    <th>Data Pendukung</th>
+                                    <th>Tingkat Keparahan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Deforestasi dan Konversi Lahan</td>
+                                    <td>Kehilangan 40% mangrove sejak 1980 untuk tambak udang dan infrastruktur</td>
+                                    <td>Land_Tenure_Records.csv (T103, Boundary_Defined = No)</td>
+                                    <td>⭐⭐⭐⭐⭐</td>
+                                </tr>
+                                <tr>
+                                    <td>Polusi</td>
+                                    <td>Penurunan kualitas air dan biodiversitas</td>
+                                    <td>Biodiversity_Monitoring.csv (B103, Water_Quality = Poor)</td>
+                                    <td>⭐⭐⭐</td>
+                                </tr>
+                                <tr>
+                                    <td>Perubahan Iklim</td>
+                                    <td>Kenaikan permukaan laut (1-2 mm/tahun) mengancam zona proksimal</td>
+                                    <td>Studi Krauss & Osland (2023)</td>
+                                    <td>⭐⭐⭐⭐</td>
+                                </tr>
+                                <tr>
+                                    <td>Kurangnya Kesadaran</td>
+                                    <td>Penebangan untuk kayu bakar di lahan masyarakat</td>
+                                    <td>Land_Tenure_Records.csv (T102)</td>
+                                    <td>⭐⭐⭐</td>
+                                </tr>
+                                <tr>
+                                    <td>Tantangan Konservasi</td>
+                                    <td>Kurangnya pendanaan dan transparansi</td>
+                                    <td>Funding_Sources.csv (F001)</td>
+                                    <td>⭐⭐⭐⭐</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Analisis Masalah:</h3>
+                    <div class="kpi-container">
+                        <div class="kpi-item">
+                            <h4>Deforestasi</h4>
+                            <ul>
+                                <li>Laju deforestasi: 52,000 ha/tahun (KLHK, 2023)</li>
+                                <li>Penyebab utama: Konversi ke tambak (60%), infrastruktur (25%), lainnya (15%)</li>
+                                <li>Area kritis: Sumatra Utara, Jawa Timur, Kalimantan Barat</li>
+                            </ul>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Polusi</h4>
+                            <ul>
+                                <li>Sumber: Limbah industri (45%), pertanian (30%), domestik (25%)</li>
+                                <li>Dampak: Penurunan 30% keanekaragaman hayati di area tercemar</li>
+                                <li>Parameter kritis: BOD, logam berat, pestisida</li>
+                            </ul>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Perubahan Iklim</h4>
+                            <ul>
+                                <li>Kenaikan suhu: +0.8°C sejak 1980</li>
+                                <li>Perubahan pola hujan: ±20% variabilitas musiman</li>
+                                <li>Dampak: Perubahan zonasi, penurunan produktivitas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Best Practice: Konservasi Berbasis Masyarakat di Kalimantan Barat</h3>
+                    <p>Proyek percontohan yang melibatkan masyarakat adat:</p>
+                    <ul>
+                        <li>Menanam 5,000 hektare mangrove dengan pendanaan UNDP</li>
+                        <li>Mengintegrasikan blockchain untuk transparansi</li>
+                        <li>Distribusi manfaat 8 juta IDR (Community_Engagement.csv, E106)</li>
+                        <li>Peningkatan pendapatan masyarakat 35% dalam 2 tahun</li>
+                    </ul>
+                    
+                    <h3>KPI Measurement:</h3>
+                    <div class="kpi-container">
+                        <div class="kpi-item">
+                            <h4>Pengurangan Deforestasi</h4>
+                            <p>Maksimal 2% kerusakan mangrove per tahun</p>
+                            <p><strong>Metode:</strong> Pemantauan satelit bulanan</p>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Kualitas Air</h4>
+                            <p>Minimal 80% zona dengan Water_Quality "Good" atau "Moderate"</p>
+                            <p><strong>Parameter:</strong> BOD < 20 mg/L, DO > 4 mg/L</p>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Pendanaan</h4>
+                            <p>Minimal 50 juta IDR/proyek</p>
+                            <p><strong>Sumber:</strong> Funding_Sources.csv</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Formula Tingkat Degradasi:</h3>
+                    <p>Menghitung persentase area mangrove yang terdegradasi:</p>
+                    <p>\[D_r = \frac{A_d}{A_t} \cdot 100\]</p>
+                    <p>di mana:</p>
+                    <ul>
+                        <li>\(A_d\): Luas terdegradasi (ha, estimasi dari pemantauan satelit)</li>
+                        <li>\(A_t\): Luas total mangrove (ha, dari Area_Ha)</li>
+                    </ul>
+                    
+                    <h4>Contoh Perhitungan:</h4>
+                    <p>Jika 5 ha terdegradasi dari 50 ha (C001):</p>
+                    <p>\[D_r = \frac{5}{50} \cdot 100 = 10\%\]</p>
+                    
+                    <h3>Regulasi Penanganan:</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Regulasi</th>
+                                    <th>Isi Penting</th>
+                                    <th>Dampak</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>UU No. 41/1999 tentang Kehutanan</td>
+                                    <td>Melarang konversi lahan mangrove tanpa izin</td>
+                                    <td>Mengurangi deforestasi illegal</td>
+                                </tr>
+                                <tr>
+                                    <td>Permen LHK No. P.33/2016</td>
+                                    <td>Mitigasi polusi di ekosistem mangrove</td>
+                                    <td>Peningkatan kualitas air</td>
+                                </tr>
+                                <tr>
+                                    <td>Perpres No. 98/2021</td>
+                                    <td>Mengatur perdagangan kredit karbon</td>
+                                    <td>Insentif ekonomi untuk konservasi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="section2-2">
+                    <h2>2.2 Blockchain-Based Mangrove Conservation untuk Kredit Karbon</h2>
+                    <p>Teknologi blockchain memberikan solusi inovatif untuk tantangan konservasi mangrove melalui:</p>
+                    
+                    <div class="kpi-container">
+                        <div class="kpi-item">
+                            <h4>Transparansi</h4>
+                            <p>Mencatat semua transaksi kredit karbon secara immutable</p>
+                            <p><strong>Contoh:</strong> Blockchain_Transactions.csv (T001)</p>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Akuntabilitas</h4>
+                            <p>Validasi oleh pihak independen (Conservation_Validators.csv)</p>
+                            <p><strong>Standar:</strong> Verified Carbon Standard</p>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Efisiensi</h4>
+                            <p>Otomatisasi proses verifikasi dan perdagangan</p>
+                            <p><strong>Penghematan:</strong> 40% biaya transaksi</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Arsitektur Sistem Blockchain:</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Komponen</th>
+                                    <th>Fungsi</th>
+                                    <th>Contoh Data</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Smart Contract</td>
+                                    <td>Otomatisasi distribusi kredit karbon</td>
+                                    <td>Carbon_Credits_Transferred = 250</td>
+                                </tr>
+                                <tr>
+                                    <td>Distributed Ledger</td>
+                                    <td>Pencatatan transaksi yang terdesentralisasi</td>
+                                    <td>Block Hash: 0x1a2b3c4d</td>
+                                </tr>
+                                <tr>
+                                    <td>Validation Nodes</td>
+                                    <td>Verifikasi data konservasi</td>
+                                    <td>Validation_Status = Approved</td>
+                                </tr>
+                                <tr>
+                                    <td>Tokenization</td>
+                                    <td>Representasi digital aset karbon</td>
+                                    <td>1 kredit = 1 ton CO₂</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Manfaat Blockchain untuk Konservasi:</h3>
+                    <div class="kpi-container">
+                        <div class="kpi-item">
+                            <h4>Transparansi</h4>
+                            <ul>
+                                <li>Pelacakan real-time Conservation_ID, Area_Ha, Carbon_Credits</li>
+                                <li>Contoh: Proyek C001 tercatat di Blockchain_Transactions.csv</li>
+                            </ul>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Verifikasi</h4>
+                            <ul>
+                                <li>Validation_Status oleh ahli independen</li>
+                                <li>Contoh: Conservation_Validators.csv (V001)</li>
+                            </ul>
+                        </div>
+                        <div class="kpi-item">
+                            <h4>Pendanaan</h4>
+                            <ul>
+                                <li>Harga pasar transparan (Carbon_Market_Prices.csv)</li>
+                                <li>Contoh: Harga 150,000 IDR/kredit (P001)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Tantangan Implementasi Blockchain:</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tantangan</th>
+                                    <th>Dampak</th>
+                                    <th>Solusi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Akses Teknologi</td>
+                                    <td>Keterbatasan infrastruktur digital di komunitas pesisir</td>
+                                    <td>Pelatihan, aplikasi mobile sederhana</td>
+                                </tr>
+                                <tr>
+                                    <td>Biaya Validasi</td>
+                                    <td>Biaya tinggi untuk verifikasi kredit karbon</td>
+                                    <td>Skala ekonomi, pendanaan bersama</td>
+                                </tr>
+                                <tr>
+                                    <td>Regulasi</td>
+                                    <td>Kerangka hukum belum lengkap</td>
+                                    <td>Advokasi kebijakan, sandbox regulasi</td>
+                                </tr>
+                                <tr>
+                                    <td>Fluktuasi Pasar</td>
+                                    <td>Harga karbon tidak stabil</td>
+                                    <td>Hedging, kontrak jangka panjang</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>Best Practice: Proyek Kalimantan Barat</h3>
+                    <p>Implementasi blockchain yang sukses:</p>
+                    <ul>
+                        <li>Menghasilkan 1,500 kredit karbon terverifikasi</li>
+                        <li>Transaksi transparan di Blockchain_Transactions.csv (T001)</li>
+                        <li>Peningkatan 40% partisipasi masyarakat</li>
+                        <li>Pengurangan 30% biaya transaksi</li>
+                    </ul>
+                    
+                    <h3>Formula Efisiensi Blockchain:</h3>
+                    <p>Mengukur proporsi transaksi yang tervalidasi:</p>
+                    <p>\[E_{b} = \frac{T_{v}}{T_{t}} \cdot 100\]</p>
+                    <p>di mana:</p>
+                    <ul>
+                        <li>\(T_{v}\): Jumlah transaksi tervalidasi (Validation_Status = Approved)</li>
+                        <li>\(T_{t}\): Total transaksi (Blockchain_Transactions.csv)</li>
+                    </ul>
+                    
+                    <h4>Contoh Perhitungan:</h4>
+                    <p>Jika 200 dari 250 transaksi tervalidasi:</p>
+                    <p>\[E_{b} = \frac{200}{250} \cdot 100 = 80\%\]</p>
+                    
+                    <h3>Roadmap Pengembangan:</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tahap</th>
+                                    <th>Target</th>
+                                    <th>Indikator</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2024-2025</td>
+                                    <td>Pilot project di 5 lokasi</td>
+                                    <td>10,000 kredit karbon</td>
+                                </tr>
+                                <tr>
+                                    <td>2026-2027</td>
+                                    <td>Integrasi nasional</td>
+                                    <td>50,000 ha terdaftar</td>
+                                </tr>
+                                <tr>
+                                    <td>2028-2030</td>
+                                    <td>Skala internasional</td>
+                                    <td>30% kredit karbon laut global</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="sidebar-right">
+                <div class="tips-container">
+                    <h3>TIPS IMPLEMENTASI</h3>
+                    
+                    <div class="tip-card" id="tip2-1">
+                        <h4>Strategi Konservasi</h4>
+                        <ul>
+                            <li>Hentikan konversi lahan di State Land dan Community Land (Land_Tenure_Records.csv)</li>
+                            <li>Lakukan pelatihan berkala (Community_Engagement.csv)</li>
+                            <li>Gunakan teknologi satelit untuk pemantauan deforestasi</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card" id="tip2-2">
+                        <h4>Optimasi Blockchain</h4>
+                        <ul>
+                            <li>Gunakan enkripsi High untuk data Transaction (Blockchain_Data_Compliance.csv)</li>
+                            <li>Validasi kredit karbon setiap 6 bulan</li>
+                            <li>Libatkan minimal 10 komunitas lokal per proyek</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card" id="tip2-3">
+                        <h4>KPI Kunci</h4>
+                        <ul>
+                            <li>Kredit Karbon Terverifikasi: Minimal 90% (Conservation_Validators.csv)</li>
+                            <li>Transaksi Blockchain: 100% tanpa double counting</li>
+                            <li>Manfaat Komunitas: Minimal 5 juta IDR/peserta</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card" id="tip2-4">
+                        <h4>Studi Kasus Sukses</h4>
+                        <p><strong>Proyek Kalimantan Barat:</strong></p>
+                        <ul>
+                            <li>1,500 kredit karbon menggunakan blockchain</li>
+                            <li>Transparansi penuh di Blockchain_Transactions.csv</li>
+                            <li>Peningkatan ekonomi masyarakat 35%</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card" id="tip2-5">
+                        <h4>Regulasi Pendukung</h4>
+                        <ul>
+                            <li>Perpres No. 98/2021: Kerangka perdagangan karbon</li>
+                            <li>Permen LHK No. P.21/2021: Transparansi data</li>
+                            <li>UU No. 32/2009: Izin lingkungan wajib</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card" id="tip2-6">
+                        <h4>Kalkulator Ekonomi</h4>
+                        <p>Estimasi pendapatan kredit karbon:</p>
+                        <p>\[Pendapatan = Carbon\_Credits \cdot Price\_Per\_Credit\_IDR\]</p>
+                        <p><strong>Contoh:</strong> 250 kredit × 150,000 IDR = 37.5 juta IDR</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <p>MANGROVE BLOCKCHAIN INDONESIA © 2025 ARRY HUTOMO. All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
